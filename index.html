@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train - Ticket Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://image.flaticon.com/icons/png/512/2062/2062051.png" sizes="16x16 24x24 32x32 48x48 64x64 128x128">
+</head>
+<body>
+
+    <div id="viewport">
+
+        <div class="generator">
+            <h1>Ticket price generator</h1>
+
+            <!-- form -->
+            <div class="data-form">
+
+                <!-- 1 row -->
+                <div class="row">
+
+                    <!-- Names -->
+                    <div class="col">
+                        <label for="name">Name &amp; Surname</label>
+                        <input id="name" type="text" placeholder="Complete Name">
+                    </div>
+
+                    <!-- KM -->
+                    <div class="col">
+                        <label for="km">How many kilometers will you travel?</label>
+                        <input id="km" type="number" placeholder="Kilometers (km)">
+                    </div>
+
+                    <!-- Ages -->
+                    <div class="col">
+                        <label for="age">What age group do you belong to?</label>
+                        <select name="" id="age">
+                            <option value="Underages">Underage (-18)</option>
+                            <option value="Adults">Adult (+18)</option>
+                            <option value="Seniors">Senior (+65)</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <!-- 2 row -->
+                <div class="row">
+                    <div id="generate" class="my-btn">Generate</div>
+
+                    <div id="cancel" class="my-btn">Cancel</div>
+                </div>
+
+            </div>
+
+
+            <!-- Ticket Generated View -->
+            <h2>Your Ticket</h2>
+
+            <!-- Ticket -->
+            <div id="ticket" class="hidden">
+                <h3>User's info ticket</h3>
+
+                <div class="your-ticket row">
+                    <!-- User info -->
+                    <div class="col">
+                        <h4>User: <span id="user-name"></span></h4>
+                    </div>
+
+                    <div class="col">
+                        <table>
+                            <tr>
+                                <th>Offer</th>
+                                <th>Cabin</th>
+                                <th>CP Code</th>
+                                <th>Ticket Price</th>
+                            </tr>
+
+                            <tr>
+                                <td><span id="discount"></span></td>
+                                <td><span id="cabin"></span></td>
+                                <td><span id="cp-code"></span></td>
+                                <td><span id="ticket-price"></span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        
+    </div>
+
+
+
+ <script src="js/script.js"></script>
+
+</body>
+</html>

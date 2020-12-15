@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3 {
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+/* Container Data Form & Ticket Generated View */
+.data-form,
+.your-ticket{
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+/* Generate & Cancel buttons */
+.my-btn{
+    margin: 0 10px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.my-btn:hover,
+.my-btn:active,
+.my-btn:focus{
+    cursor: pointer;
+    scale: 1.1;
+}
+/* Hidden & show Ticket */
+.hidden { display: none; }
+.show { display: unset; }
+
+/* Table elements */
+th, td{ padding: 20px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+input,
+select{
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+input:focus,
+select:focus{
+    background-color: black;
+    color: white;
+}
