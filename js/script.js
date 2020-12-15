@@ -43,6 +43,7 @@ var cancel = document.getElementById("cancel");
 cancel.addEventListener('click',
 function() {
 
+    // Crear form to reuse
     document.getElementById('name').value = '';
     document.getElementById('km').value = '';
     document.getElementById('age').value = '';
