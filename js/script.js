@@ -33,6 +33,8 @@ function() {
     // CP Code
     document.getElementById('cp-code').innerHTML = Math.floor(Math.random() * (100000 - 90000)) + 90000;
 
+    // Show Ticket
+    document.getElementById('ticket').className = 'show';
 }
 );
 
@@ -56,5 +58,7 @@ function() {
     // CP Code
     document.getElementById('cp-code').innerHTML = '';
 
+    // Hidden Ticket
+    document.getElementById('ticket').className = 'hidden';
 }
 );
