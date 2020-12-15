@@ -10,17 +10,17 @@ function() {
     // Calc price (0.21€ / km)
     var ticketPrice = 0.21 * distance;
     // Discount Type
-    var discountType = "Base Discount";
+    var discountType = "Reatil Price";
 
 
     // Ticket Price
     if (age == 'Underages'){
         ticketPrice -= ticketPrice * 0.2;
-        discountType = 'Discount Young';
+        discountType = 'Discount Young ( -20% )';
     }
     else if (age == 'Seniors'){
         ticketPrice -= ticketPrice * 0.4;
-        discountType = 'Discount Senior';
+        discountType = 'Discount Senior ( -40% )';
     }
 
     document.getElementById('ticket-price').innerHTML = ticketPrice.toFixed(2)  + '€';
